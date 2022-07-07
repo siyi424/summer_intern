@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./login.css">
+        <title>JQuery form 表单验证</title>
+    </head>
+
+
+    <body>
+        <!--顶部导航栏-->
+        <ul class="topmenu">
+            <li><a href="#L">L</a></li>
+            <li><a href="#M">M</a></li>
+            <li><a href="#M-L">M-L</a></li>
+            <li><a href="#S">S</a></li>
+            <li><a href="#S-L">S-L</a></li>
+            <li id="QRcode">手机二维码预览</li> 
+        </ul>
+        
+        
+        
+        <form class="page">
+            <table>
+                <tr>
+                    <td class="input-name">用户名</td> 
+                    <td>
+                        <input type="text" name="username">
+                        <span class="tooltip-text">用户名必须为4—16位的英文字母或数字</span>
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td class="input-name">密码</td> 
+                    <td>
+                        <input type="text" name="code">
+                        <span class="tooltip-text">密码必须为6-16位</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="input-name">确认密码</td> 
+                    <td>
+                        <input type="text" name="check-code">
+                        <span class="tooltip-text">两次密码输入要一致</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="input-name">email</td> 
+                    <td>
+                        <input type="email" name="email">
+                        <span class="tooltip-text">Email格式要正确</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="input-name">昵称</td> 
+                    <td>
+                        <input type="text" name="nickname">
+                        <span class="tooltip-text">昵称必须为2—16位</span>
+                    </td>
+                </tr>
+            </table>
+        
+
+            <div class="button">
+                <input value="注 册" type="submit" style="margin-top: 20px; margin-right: 45px;">
+                <input value="我有账号，我要登录" type="button" style="margin-top: 20px; margin-right: 20px">
+            </div>
+        </form>
+
+        
+    </body>
+</html>
