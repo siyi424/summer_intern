@@ -127,15 +127,13 @@ body {
     position: absolute; 
     left: 340px; 
 
-    opacity: 0;
-    transition: opacity 0.5s;
 }
 
 
-.row input:focus +.tooltip-text{
+/* .row input:focus +.tooltip-text{
     visibility: visible;
     opacity: 1;
-}
+} */
 
 
 /* 提示框添加小三角 */

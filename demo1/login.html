@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./login.css">
         <title>JQuery form 表单验证</title>
+        <script type="text/javascript" src="./login.js" async></script>
+        
     </head>
 
 
@@ -22,46 +24,44 @@
         </div>
 
         
-
-        
         <div class="page">
             <div class="row">
                 <span class="input-name">用户名</span>
-                <input type="text" name="code">
+                <input type="text" id="username">
                 <span class="tooltip-text">用户名必须为4—16位的英文字母或数字</span>
             </div>
 
             <div class="row">
                 <span class="input-name">密码</span>
-                <input type="text" name="code">
+                <input type="text" id="code">
                 <span class="tooltip-text">密码必须为6-16位</span>
             </div>
 
             <div class="row">
                 <span class="input-name">确认密码</span>
-                <input type="text" name="check-code">
+                <input type="text" id="check-code">
                 <span class="tooltip-text">两次密码输入要一致</span>
             </div>
 
             <div class="row">
                 <span class="input-name">email</span>
-                <input type="email" name="email">
+                <input type="email" id="email">
                 <span class="tooltip-text">Email格式要正确</span>
             </div>
 
             <div class="row">
                 <span class="input-name">昵称</span>
-                <input type="text" name="nickname">
+                <input type="text" id="nickname">
                 <span class="tooltip-text">昵称必须为2—16位</span>
             </div>
 
             <div class="button">
-                <input value="注 册" type="submit" style="margin-top: 20px; margin-right: 45px;">
-                <input value="我有账号，我要登录" type="button" style="margin-top: 20px; margin-right: 20px">
+                <input id="reg" value="注 册" type="submit" style="margin-top: 20px; margin-right: 45px;">
+                <input id="btn" value="我有账号，我要登录" type="button" style="margin-top: 20px; margin-right: 20px">
             </div>
 
         </div>
 
-
+        
     </body>
 </html>
