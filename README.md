@@ -13,3 +13,7 @@ This is my first "homework", when I just read some html and css programmers.
 hope I coud do it well.
 
 --2022/07/07
+
+实现了demo1的外观和功能，基本完成。接下来需要优化代码。值得纪念的一天。
+
+--2022/07/19

@@ -2,29 +2,21 @@
     box-sizing: border-box;
 }
 
-
-body {
+#top {
+    background-color: #333;
     margin: 0;
-    background-color: #f5f5f5;
+    padding: 0;
 }
-
 
 /*顶部导航栏*/
 .topmenu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: sticky;
-    background-color: #333;
-
+    padding-left: 20px;
+    color: white;
 }
 
-.topmenu li {
-    float: left;
-}
 
-.topmenu li a, #QRcode {
+.topmenu  a {
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -33,55 +25,72 @@ body {
     color: white;
 }
 
-.topmenu li a:hover {
+.topmenu a:hover {
     color: orange;
 }
 
 
 /* 二维码 */
-#QRcode {
-    background-color: rgb(80, 78, 78);
+.QRcode_p {
+    position: relative;
+}
+.QRcode_s{
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 18px;
+    right: 0;
+
+    visibility: hidden;
 }
 
-#QRcode:hover {
-    cursor: pointer;
-    content: url("./img/QRcode.jpg");
+.QRcode_p:hover .QRcode_s{
+    visibility: visible;
 }
+
+
 
 
 
 
 /* body */
+body {
+    /* 设置外边距为0，同时box-sizing：border-box，可以让两侧满格 */
+    margin: 0;  
+    background-color: #f5f5f5;
+}
+
+
 /* 框框 */
 .page {
-    margin:60px 39%;
+    width: 400px;
     border: 1px solid #333;
     padding: 30px;
+
+    margin: 54px auto;
 
     box-shadow: 0 0 20px #c8cdd4;
     border-radius: 10px;
     border-color: #8d939a;
-
-    z-index: -1;
 }
 
-
-
-table {
-    display: inline-block;
-    margin-right: -300px;
+.row {
+    position: relative;
 }
 
 /* 第一列： input的名称 */
 .input-name {
     font-size: smaller;
     text-align: right;
-    padding: 0px 2px 8px 0px;
+    
+    display: inline-block;
     width: 60px;
+    margin-right: 10px;
+    
 }
 
 
-table input {
+.row input {
     border-radius: 8px;
     border: 1px solid #e9e9e9;
     height: 40px;
@@ -94,7 +103,7 @@ table input {
 
 
 /* focus input框 改变颜色 */
-table input:focus {
+.row input:focus {
     border-color: #5aabd4;
 }
 
@@ -102,8 +111,10 @@ table input:focus {
 /* 提示框 */
 .tooltip-text {
     visibility: hidden; 
-    z-index: 1;
     text-align: left;
+
+    /* 超出父元素宽度，强制不换行 */
+    white-space: nowrap;
 
     height: 40px;
     padding: 10px;
@@ -112,19 +123,17 @@ table input:focus {
     color: white;
     border-radius: 5px;
 
-    position: relative;
-    left: 10px;
 
+    position: absolute; 
+    left: 340px; 
 
-    opacity: 0;
-    transition: opacity 0.5s;
 }
 
 
-table input:focus +.tooltip-text{
+/* .row input:focus +.tooltip-text{
     visibility: visible;
     opacity: 1;
-}
+} */
 
 
 /* 提示框添加小三角 */
