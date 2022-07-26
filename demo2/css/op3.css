@@ -1,0 +1,53 @@
+/* /////////////////////////////////////////////////////////////////////// */
+body {
+    background: url("../img/bg.png") no-repeat -1px 0;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+/* 头部样式 */
+.header {
+    height: 110px;
+    background: url("../img/db_bg.png") no-repeat -1px 0;
+}
+
+/* "重庆四号线XXX"大logo */
+.logo {
+    position: absolute;
+    left: 724.5px;
+    top: 15.5px;
+}
+
+/* 顶部导航栏 */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 35px;
+    padding-left: 31.5px;
+    padding-right: 17px;
+}
+/* 时间信息 */
+.clock {
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+/* 站台信息 */
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+/* 底部样式 */
+.footer {
+    width: 1920px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    background: transparent;
+}

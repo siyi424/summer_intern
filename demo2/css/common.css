@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+}
+
+.blueNum {
+    font-family: SourceHanSansCN-Regular;
+    color: #49A3FF;
+}
+
+.whiteFont {
+    color: #EEF6FF;
+    font-family: MyriadPro-Regular;
+}
