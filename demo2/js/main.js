@@ -1,11 +1,14 @@
 class Main {
-    constructor(admin = 'admin', loc = '鱼嘴') {
+    constructor(admin = 'admin', loc = '重庆市市辖区') {
         let m = {
             admin: admin,                           //管理员信息
             clock: null,                            //时间对象                                    
             clockTimer: null,                       //全局定时器，用于实时更新显示时间（specific具体时间）
-            location: loc,                          //车站名称
-            weather: null,                          //天气情况
+            station_info: {
+                loc: loc,
+                weather: null,
+                temp: null,
+            },                        
         };
 
         Object.assign(this, m);
@@ -18,11 +21,13 @@ class Main {
         }, 1000);
     }
 
-
-
     start() {
         this.clock = new Clock();
         this.setClockTimer();
+
+        
+        this.station_info = new Station();
+        this.station_info.setStation()
     }
 }
 

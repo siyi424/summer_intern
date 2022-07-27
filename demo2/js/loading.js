@@ -46,5 +46,38 @@ class Clock {
 
 //站台信息类：location 和 weather
 class Station {
+    constructor() {
+        let s = {
+            loc: window._main.station_info.loc,
+            weather: null,
+            temperature: null,
+        };
+        Object.assign(this, s);
+    }
 
+    setStation() {
+        const key = 'fd1423eaeb92a7fb98f07b97bf32f1c0';
+        const city = '500100'; //重庆市辖区市
+        const base = 'https://restapi.amap.com/v3/weather/weatherInfo?';
+        let url = base + 'city=' + city + '&key=' + key;
+
+        const fectchPromise = fetch(url);
+        fectchPromise
+            .then( Response => {
+                if (!Response.ok) {
+                    throw new Error('HTTP error!');
+                }
+                return Response.json();
+            })
+            .then( json => {
+                let loc = document.getElementsByClassName('location')[0];
+                let weather = document.getElementsByClassName('weather')[0];
+                let temp = document.getElementsByClassName('temperature')[0];
+                loc.textContent = this.loc;
+                weather.textContent = json.lives[0].weather;
+                temp.textContent = json.lives[0].temperature + '℃';
+
+                console.log(this);
+            })
+    }
 }
