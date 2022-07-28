@@ -15,10 +15,11 @@ class Main {
     }
 
     setClockTimer() {
-        let clk = document.getElementsByClassName('clock');
+        this.clock.getTime(); //获取年月日
         this.clockTimer = setInterval(() => {
-            this.clock.getTime(clk);
+            this.clock.renewTime(); //更新时分秒
         }, 1000);
+        this.clock.renewTime(); //直接调用一次，解决setinterval延时一秒的问题
     }
 
     start() {
