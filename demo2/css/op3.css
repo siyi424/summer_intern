@@ -45,6 +45,51 @@ body {
     padding-right: 20px;
 }
 
+/* /////////////////////////////////////////////////////////////////////////////////// */
+/* 中间表单部分 */
+ .content {
+    display: grid;
+    grid-template-columns: 4fr 5fr 4fr;
+    grid-template-rows: 350px 1fr;
+
+    margin: 0px 40px;
+    gap: 40px
+ }
+
+ .content-left2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+ }
+
+.title {
+    height: 40px;
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #FFFFFF;
+
+    background: url("../img/form/headers.png") no-repeat left bottom;
+}
+
+/* title前面的蓝色小竖条 */
+.title::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    
+    border-left: 5px solid #24C3FF;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* //////////////////////////////////////////////////////////////////////// */
@@ -57,6 +102,8 @@ body {
     left: 0px;
 
     display: flex;
+
+    z-index: 2;
 }
 
 /* 中间居中 */

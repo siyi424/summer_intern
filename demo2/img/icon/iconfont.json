@@ -1,0 +1,121 @@
+{
+  "id": "3553104",
+  "name": "demo2",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "demo2",
+  "glyphs": [
+    {
+      "icon_id": "827618",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "927307",
+      "name": "工单管理",
+      "font_class": "gongdanguanli",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "3105360",
+      "name": "车站",
+      "font_class": "chezhan",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    },
+    {
+      "icon_id": "4850672",
+      "name": "头像",
+      "font_class": "touxiang",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "12636576",
+      "name": "报警",
+      "font_class": "baojing1",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "13872290",
+      "name": "退出 ",
+      "font_class": "tuichu",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "14662088",
+      "name": "环境监测",
+      "font_class": "huanjingjiance",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "18441414",
+      "name": "天气，太阳，，白天，起床",
+      "font_class": "tianqitaiyangqichuang",
+      "unicode": "e712",
+      "unicode_decimal": 59154
+    },
+    {
+      "icon_id": "18444820",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "18533088",
+      "name": "新增",
+      "font_class": "xinzeng",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "19194092",
+      "name": "智能运维",
+      "font_class": "zhinengyunwei",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "20727702",
+      "name": "全景",
+      "font_class": "quanjing",
+      "unicode": "e895",
+      "unicode_decimal": 59541
+    },
+    {
+      "icon_id": "21861015",
+      "name": "运营-场景配置",
+      "font_class": "changjingpeizhi",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "1244",
+      "name": "重做",
+      "font_class": "zhongzuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "2862",
+      "name": "大雨",
+      "font_class": "dayu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "2116681",
+      "name": "水电站",
+      "font_class": "shuidianzhan",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    }
+  ]
+}
