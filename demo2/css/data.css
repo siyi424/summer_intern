@@ -22,6 +22,62 @@
 
 
 /* 增加程控卡表单 */
+.fp-input {
+    display: none;
+    /* display: grid; */
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px 1fr 2fr 50px;
+
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+    top: 200px;
+    left: 130px;
+
+    background-color: rgba(2, 82, 141, 0.85);
+    color: white;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+
+    padding-right: 20px;
+}
+
+.fp-input p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.fp-input label {
+    text-align: center;
+}
+
+.fp-input #name {
+    height: 30px;
+}
+
+.fp-form-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+
+    color:#02EDEF
+}
+
+
+
+/* 增加form按钮样式(form左下角加号) */
+.form-left-icons div, .cancel, .ensure {
+    cursor: pointer;
+}
+
+
+
 
 
 
@@ -96,5 +152,8 @@
     margin: auto;
     text-align: center;
     line-height: 29px;
+}
 
 /* ////////////////////////////////////////////////////////////////////////////////// */
+
+

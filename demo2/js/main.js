@@ -28,6 +28,33 @@ class Main {
         this.clock.renewTime(); //直接调用一次，解决setinterval延时一秒的问题
     }
 
+
+    // 初始化btn的功能
+    init() {
+        // 加号显示表单
+        let addForm = document.querySelector('.form-left-icons div');
+        addForm.addEventListener('click', function () {
+            let form = document.getElementsByClassName('fp-input')[0];
+            if (form.style.display === 'none') {
+                form.style.display = 'grid';
+            } else {
+                form.style.display = 'none';
+            }
+        });
+
+        // ‘取消’ 重置表单，并隐藏
+        let cancelForm = document.querySelector('.cancel');
+        cancelForm.addEventListener('click', function () {
+            let form = document.getElementsByClassName('fp-input')[0];
+            form.reset();
+            form.style.display = 'none';
+        });
+
+    }
+    
+
+
+
     start() {
         this.clock = new Clock();
         this.setClockTimer();
@@ -35,6 +62,10 @@ class Main {
         
         this.station_info = new Station();
         this.station_info.setStation()
+
+
+        this.init();
+
     }
 }
 

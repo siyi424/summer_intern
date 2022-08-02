@@ -7,4 +7,6 @@ class flowPath {
 
         Object.assign(this, f);
     }
+
 }
+
