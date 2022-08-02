@@ -6,6 +6,13 @@
   "description": "demo2",
   "glyphs": [
     {
+      "icon_id": "11641868",
+      "name": "叉",
+      "font_class": "cha",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
       "icon_id": "827618",
       "name": "地图",
       "font_class": "ditu",
@@ -95,27 +102,6 @@
       "font_class": "changjingpeizhi",
       "unicode": "e62e",
       "unicode_decimal": 58926
-    },
-    {
-      "icon_id": "1244",
-      "name": "重做",
-      "font_class": "zhongzuo",
-      "unicode": "e600",
-      "unicode_decimal": 58880
-    },
-    {
-      "icon_id": "2862",
-      "name": "大雨",
-      "font_class": "dayu",
-      "unicode": "e601",
-      "unicode_decimal": 58881
-    },
-    {
-      "icon_id": "2116681",
-      "name": "水电站",
-      "font_class": "shuidianzhan",
-      "unicode": "e62a",
-      "unicode_decimal": 58922
     }
   ]
 }

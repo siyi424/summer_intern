@@ -1,0 +1,100 @@
+/* 行程卡 */
+.form-left-cards {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 5px;
+
+
+}
+
+/* 设置滚动条样式 */
+.form-left-cards::-webkit-scrollbar {
+    background-color:  rgba(2, 82, 141, 0.3);
+    width: 15px;
+}
+.form-left-cards::-webkit-scrollbar-thumb {
+    background-color: #02EDEF;
+}
+.form-left-cards::-webkit-scrollbar-button {
+    background-color: rgba(2, 82, 141, 1);
+}
+
+
+
+/* 增加程控卡表单 */
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+/* 程控卡卡片样式 */
+.flowPath {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-rows: 20px 20px;
+    row-gap: 5px;
+    padding: 7px 20px;
+    padding-left: 30px;
+
+    background: rgba(2, 82, 141, 0.3);
+
+    position: relative;
+    border-left: 3px solid #02EDEF;
+
+    margin-bottom: 5px;
+}
+
+/* 框框左边小三角 */
+.flowPath::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+
+    top: 26px;
+    left: 10px;
+    border: 5px solid transparent;
+    border-left-color: #02EDEF;
+    z-index: 5;
+} 
+
+
+
+.fp-title {
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #24C3FF;
+}
+
+.fp-content {
+    font-size: 15px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.fp-button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    font-size: 15px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #24C3FF;
+
+    width: 80px;
+    height: 29px;
+    background: rgba(36, 195, 255, 0.2);
+    border-radius: 1px;
+    
+    margin: auto;
+    text-align: center;
+    line-height: 29px;
+
+/* ////////////////////////////////////////////////////////////////////////////////// */

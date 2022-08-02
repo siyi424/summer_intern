@@ -49,11 +49,12 @@ body {
 /* 中间表单部分 */
  .content {
     display: grid;
-    grid-template-columns: 4fr 5fr 4fr;
-    grid-template-rows: 350px 1fr;
+    grid-template-columns: 1fr 700px 1fr;
+    grid-template-rows: 310px 1fr;
 
-    margin: 0px 40px;
-    gap: 40px
+    margin: -30px 40px;
+    column-gap: 30px;
+    row-gap: 20px;
  }
 
  .content-left2 {
@@ -83,11 +84,164 @@ body {
 
 
 
+/* form的框框 */
+.form-left, .form-right1, .form-right2 {
+    height: 270px;
+    background: rgba(2, 82, 141, 0.3);
+    border: 1px solid rgba(2, 82, 141, 1);
+    margin-top: 5px;
+
+    /* 四角高亮 */
+    background: linear-gradient(#24C3FF, #24C3FF) left top,
+    linear-gradient(#24C3FF, #24C3FF) left top,
+    linear-gradient(#24C3FF, #24C3FF) right top,
+    linear-gradient(#24C3FF, #24C3FF) right top,
+    linear-gradient(#24C3FF, #24C3FF) left bottom,
+    linear-gradient(#24C3FF, #24C3FF) left bottom,
+    linear-gradient(#24C3FF, #24C3FF) right bottom,
+    linear-gradient(#24C3FF, #24C3FF) right bottom;
+    background-repeat: no-repeat;
+    background-size: 2px 20px, 20px 2px;
+}
 
 
 
 
+/* 第一行左边 */
+.form-left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
 
+
+.form-left-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    height: 30px;
+    padding-top: 2px;
+
+    margin-top: auto; 
+    align-items: center;
+}
+
+
+
+
+/* 第一行中间 */
+.form-center {
+    height: 270px;
+    margin-top: 40px;
+    border: 1px solid #24C3FF;
+}
+
+.form-center-bars {
+    display: flex;
+}
+
+.form-center-bars div {
+    font-size: 13px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #24C3FF;
+
+    height: 37px;
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 2px;
+    background: url("../img/form/ejcd_b.png") center;
+}
+
+
+.content-left2 {
+    background-color: rgba(2, 82, 141, 0.3);
+    height: 500px;
+    margin-top: 20px;
+
+    z-index: -1;
+
+    color: white
+}
+
+
+
+
+/* 右下角圆形 */
+.right-circles {
+    position: absolute;
+    height: 70px;
+    width: 200px;
+
+    top: 760px;
+    right: 200px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    background: url('../img/form/PA／pis.png') no-repeat;
+
+    font-size: 9px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #FFFFFF;
+
+    padding-top: 18px;
+    padding-left: 25px;
+}
+
+#right-arr {
+    padding-top: 20px;
+}
+
+
+/* 左下角按钮窗 */
+.button-window {
+    width: 292px;
+    height: 167px;
+
+    background: url("../img/form/kuang.png") no-repeat;
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+
+    padding: 30px;
+    padding-top: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.button-window div {
+    font-size: 13px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+
+    width: 110px;
+    height: 27.5px;
+    background: rgba(0, 61, 106, 0.27);
+    border: 1px solid #009DD9;
+    border-radius: 14px;
+
+    padding-top: 5px;
+    padding-left: 27px;
+}
+
+.icon-cha {
+    color: #0050A2;
+    position: absolute;
+    bottom: 193px;
+    left: 307px;
+
+    z-index: 4;
+}
 
 
 
@@ -111,6 +265,7 @@ body {
     flex: 1;
 }
 
+/* 左下角小圆圈 */
 .footer-left img {
     position: absolute;
     bottom: 35.5px;

@@ -8,7 +8,13 @@ class Main {
                 loc: loc,
                 weather: null,
                 temp: null,
-            },                        
+            },
+            
+            flowPaths: [],                          //实例化flowPath对象数组
+            flowPah_info: {
+                title: null,
+                content: null,
+            }
         };
 
         Object.assign(this, m);

@@ -6,7 +6,8 @@
         <!-- 外联css -->
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="./css/op3.css">
-        <link rel="stylesheet" href="./icon/iconfont.css">
+        <link rel="stylesheet" href="./css/data.css">
+        <link rel="stylesheet" href="./img/icon/iconfont.css">
 
         <!-- 外联js -->
         <script src="./js/loading.js" async></script>
@@ -48,14 +49,44 @@
         </div>
 
 
+
+
         <!-- 中间body -->
         <div class="content">
             <!-- 第一行左边表单 -->
             <div class="content-left">
                 <div class="title">程控卡</div>
                 <div class="form-left">
+                    <!-- 设置滚动条，程控卡显示区域 -->
+                    <div class="form-left-cards">
+                        <div class="flowPath">
+                            <div class="fp-title">程控卡1-值班员</div>
+                            <div class="fp-content">通知值班站长故障/灾害情况，请求进一步处理指示</div>
+                            <div class="fp-button">点击确认</div>
+                        </div>
+                        <div class="flowPath">
+                            <div class="fp-title">程控卡1-值班员</div>
+                            <div class="fp-content">通知值班站长故障/灾害情况，请求进一步处理指示</div>
+                            <div class="fp-button">点击确认</div>
+                        </div>
+                        <div class="flowPath">
+                            <div class="fp-title">程控卡1-值班员</div>
+                            <div class="fp-content">通知值班站长故障/灾害情况，请求进一步处理指示</div>
+                            <div class="fp-button">点击确认</div>
+                        </div>
+                        <div class="flowPath">
+                            <div class="fp-title">程控卡1-值班员</div>
+                            <div class="fp-content">通知值班站长故障/灾害情况，请求进一步处理指示</div>
+                            <div class="fp-button">点击确认</div>
+                        </div>
 
 
+
+
+
+
+                    </div>
+                    
                     <div class="form-left-icons">
                         <div>
                             <img src="./img/form/plus.png">
@@ -65,6 +96,12 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 增加程控卡内容 -->
+                <div class="fp-input">
+                    
+                </div>
+                
             </div>
 
 
@@ -82,6 +119,7 @@
                     <div>突发客流</div>
                     <div>风机停机</div>
                 </div>
+
             </div>
 
 
@@ -114,17 +152,29 @@
 
         
         <!-- 左下角按钮窗 -->
-        <div class="button-window">
-
+        <div>
+            <i class="iconfont icon-cha"></i>
+            <div class="button-window">
+                <div>权限管理</div>
+                <div>事件管理</div>
+                <div>系统管理</div>
+                <div>值班管理</div>
+                <div>系统管理</div>
+                <div>值班管理</div>
+            </div>
         </div>
+        
+        
+
 
         <!-- 右下角圆形 -->
         <div class="right-circles">
-            <div>
+            <div class="circle">
                 <div>PA</div>
                 <div>0/1</div>
             </div>
-            <div>
+            <div id="right-arr"><img src="./img/form/jt.png"></div>
+            <div class="circle">
                 <div>PIS</div>
                 <div>0/1</div>
             </div>
