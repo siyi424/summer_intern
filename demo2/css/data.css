@@ -66,13 +66,14 @@
     display: flex;
     justify-content: space-around;
 
-    color:#02EDEF
+    color:#02EDEF;
+    padding-top: 15px;
 }
 
 
 
 /* 增加form按钮样式(form左下角加号) */
-.form-left-icons div, .cancel, .ensure {
+.form-left-icons div, .cancel, .ensure, .fp-button {
     cursor: pointer;
 }
 
@@ -97,6 +98,9 @@
     border-left: 3px solid #02EDEF;
 
     margin-bottom: 5px;
+
+    
+
 }
 
 /* 框框左边小三角 */
@@ -131,6 +135,17 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.fp-content::-webkit-scrollbar {
+    height: 3px;
+    background-color: rgba(2, 82, 141, 0.3);
+}
+.fp-content::-webkit-scrollbar-thumb {
+    background-color: #02EDEF;
 }
 
 .fp-button {
@@ -155,5 +170,78 @@
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* 第一行右边：故障关站 */
+
+.acc {
+    flex-grow: 1;
+}
+
+.acc-title, .acc-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-row: 30px;
+    height: 30px;
+    padding: 4px 25px;
+}
+
+.acc-title {
+    background-color: rgba(2, 82, 141, 0.3);
+    color: #24C3FF;
+
+}
+
+.sqr {
+    content: ''; 
+    width:15px; 
+    height: 15px; 
+    border: 1px solid #24C3FF; 
+    margin-top: 3px;
+}
+
+
+.acc-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acc-tag {
+    width: 120px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    color: white;
+
+    border-bottom: 2px solid #24C3FF;
+}
+
+
+.acc-btns {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.acc-btns div {
+    width: 50px;
+    text-align: center;
+    color: #24C3FF;
+    margin: 2px;
+
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+/* /////////////////////////////////////////// */
+/* 故障关站新增项样式 */
+.acc-content div {
+    font-size: 15px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF;
+}
 
 

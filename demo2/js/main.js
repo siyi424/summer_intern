@@ -11,10 +11,7 @@ class Main {
             },
             
             flowPaths: [],                          //实例化flowPath对象数组
-            flowPah_info: {
-                title: null,
-                content: null,
-            }
+            fpnums: 0,
         };
 
         Object.assign(this, m);
@@ -49,7 +46,32 @@ class Main {
             form.reset();
             form.style.display = 'none';
         });
+        
+        // ‘确认’按钮 创建新的fp对象，增加记录，插入新的html
+        let ensure = document.querySelector('.ensure');
+        ensure.addEventListener('click', () => {
+            // 新增fp实例
+            let fp = new flowPath();
+            this.fpnums += 1;
+            this.flowPaths.push(fp);
+            
+            // 获取输入数据
+            const name = document.getElementById('name').value;
+            const content = document.getElementById('content').value;
+            
+            let id = this.flowPaths.length - 1;
+            fp.title = name;
+            fp.content = content; 
+            fp.id = id;
+            fp.fpnum = this.fpnums;
 
+            // 插入新的html
+            fp.insertFP();
+
+            let form = document.getElementsByClassName('fp-input')[0];
+            form.reset();
+            form.style.display = 'none';
+        });
     }
     
 
