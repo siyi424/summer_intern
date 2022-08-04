@@ -227,12 +227,23 @@
 
 .acc-btns div {
     width: 50px;
+    height: 20px;
     text-align: center;
     color: #24C3FF;
     margin: 2px;
 
-    border: 1px solid;
+    border: 1px solid #24C3FF;
     border-radius: 3px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.acc-btns div:hover {
+    background-color: #24C3FF;
+    font-weight: bold;
+    color: white;
 }
 
 /* /////////////////////////////////////////// */

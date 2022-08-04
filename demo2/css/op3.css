@@ -1,6 +1,27 @@
 /* /////////////////////////////////////////////////////////////////////// */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+}
+
+.blueNum {
+    font-family: SourceHanSansCN-Regular;
+    color: #49A3FF;
+}
+
+.whiteFont {
+    color: #EEF6FF;
+    font-family: MyriadPro-Regular;
+}
+
+
+
 body {
     background: url("../img/bg.png") no-repeat -1px 0;
+    overflow: hidden;
 }
 
 
@@ -9,6 +30,8 @@ body {
 .header {
     height: 110px;
     background: url("../img/db_bg.png") no-repeat -1px 0;
+
+
 }
 
 /* "重庆四号线XXX"大logo */
@@ -87,21 +110,24 @@ body {
 /* form的框框 */
 .form-left, .form-right1, .form-right2 {
     height: 270px;
-    background: rgba(2, 82, 141, 0.3);
     border: 1px solid rgba(2, 82, 141, 1);
     margin-top: 5px;
 
     /* 四角高亮 */
-    background: linear-gradient(#24C3FF, #24C3FF) left top,
-    linear-gradient(#24C3FF, #24C3FF) left top,
+    background: linear-gradient(#24C3FF, #ff8724) left top,
+    linear-gradient(#24C3FF, #24ff53) left top,
     linear-gradient(#24C3FF, #24C3FF) right top,
     linear-gradient(#24C3FF, #24C3FF) right top,
     linear-gradient(#24C3FF, #24C3FF) left bottom,
     linear-gradient(#24C3FF, #24C3FF) left bottom,
     linear-gradient(#24C3FF, #24C3FF) right bottom,
-    linear-gradient(#24C3FF, #24C3FF) right bottom;
+    linear-gradient(#24C3FF, #24C3FF) right bottom,
+    rgba(2, 82, 141, 0.2);
+
     background-repeat: no-repeat;
     background-size: 2px 20px, 20px 2px;
+
+    
 }
 
 
@@ -152,12 +178,21 @@ body {
     padding-top: 10px;
     margin-top: 2px;
     background: url("../img/form/ejcd_b.png") center;
+
+    cursor: pointer;
 }
+
+.form-center-bars div:hover {
+    background: url('../img/form/ejcd_a.png') center;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
 
 
 .content-left2 {
     background-color: rgba(2, 82, 141, 0.3);
-    height: 500px;
+    height: 400px;
     margin-top: 20px;
 
     z-index: -1;
@@ -232,6 +267,14 @@ body {
 
     padding-top: 5px;
     padding-left: 27px;
+
+    cursor: pointer;
+    z-index: 4;
+}
+
+
+.button-window div:hover {
+    background: #009DD9;
 }
 
 .icon-cha {
@@ -239,6 +282,8 @@ body {
     position: absolute;
     bottom: 193px;
     left: 307px;
+
+    cursor: pointer;
 
     z-index: 4;
 }
@@ -270,6 +315,8 @@ body {
     position: absolute;
     bottom: 35.5px;
     left:26.5px;
+
+    cursor: pointer;
 }
 
 /* 中间菜单栏 */
@@ -292,11 +339,18 @@ body {
     background: url("../img/bottom/一级菜单.png") center;
 }
 
-/* 最中间的munu高亮 */
-.center-menu {
+.menu div {
+    cursor: pointer;
+}
+
+.menu:hover{
     width: 200px;
     background: url("../img/bottom/一级菜单高亮.png") center;
 }
+
+
+/* 最中间的munu高亮 */
+
 
 /* 文字 */
 .menu-word {
@@ -360,4 +414,12 @@ body {
     font-family: Microsoft YaHei;
     font-weight: 400;
     color: #FFFFFF;
+}
+
+
+
+
+/* 左下角按钮窗 */
+.left-buttons {
+    display: none;
 }

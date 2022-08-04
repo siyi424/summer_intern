@@ -72,6 +72,24 @@ class Main {
             form.reset();
             form.style.display = 'none';
         });
+
+
+        // 左下角小圆按钮 显示按钮浮窗
+        let btn = document.querySelector('.footer-left img');
+        btn.addEventListener('click', function () {
+            let form = document.getElementsByClassName('left-buttons')[0];
+            if (form.style.display === 'none') {
+                form.style.display = 'grid';
+            } else {
+                form.style.display = 'none';
+            }
+        });
+
+        let btnCancel = document.querySelector('.icon-cha');
+        btnCancel.addEventListener('click', function () {
+            let form = document.getElementsByClassName('left-buttons')[0];
+            form.style.display = 'none';
+        });
     }
     
 
