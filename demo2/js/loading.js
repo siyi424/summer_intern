@@ -72,7 +72,7 @@ class Station {
     }
 
     setStation() {
-        const key = 'fd1423eaeb92a7fb98f07b97bf32f1c0';
+        const key = *********;
         const city = '500100'; //重庆市辖区市
         const base = 'https://restapi.amap.com/v3/weather/weatherInfo?';
         let url = base + 'city=' + city + '&key=' + key;
